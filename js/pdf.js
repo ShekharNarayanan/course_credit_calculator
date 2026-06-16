@@ -4,6 +4,10 @@
 import { getEisen, getTracks } from './data.js';
 import { calcProgress, calcTrackSummary, courseKey } from './progress.js';
 
+function cleanName(naam) {
+  return naam.replace(/\s*=\s*$/, '').replace(/\s+/g, ' ').replace(/^[●\s]+/, '').trim();
+}
+
 export function generatePdf(selectedTracks, selectedCourses) {
   const { jsPDF } = window.jspdf;
   const doc = new jsPDF({ unit: 'mm', format: 'a4' });
@@ -121,19 +125,28 @@ export function generatePdf(selectedTracks, selectedCourses) {
       const p = progressMap[eis.id]?.[track.id];
       if (!p || p.required === 0) continue;
 
-      newPageIfNeeded(14);
+      const trackData  = eis.tracks[track.id];
+      const done       = trackData?.vakken.filter(vak => selectedCourses.has(courseKey(eis.id, track.id, vak.code))) ?? [];
+      const missing    = trackData?.vakken.filter(vak => !selectedCourses.has(courseKey(eis.id, track.id, vak.code))) ?? [];
+
+      // Row height: base + done line (if any) + missing line (if incomplete)
+      const hasDone    = done.length > 0;
+      const hasMissing = !p.complete && missing.length > 0;
+      const rowH       = 11 + (hasDone ? 7 : 0) + (hasMissing ? 7 : 0);
+
+      newPageIfNeeded(rowH + 4);
 
       const statusColor = p.complete ? GOOD : p.earned > 0 ? WARN : DANGER;
 
-      // Eis row bg
+      // Row bg
       doc.setFillColor(...BG);
-      doc.rect(14, y - 3, W - 28, 11, 'F');
+      doc.rect(14, y - 3, W - 28, rowH, 'F');
       doc.setDrawColor(...BORDER);
-      doc.rect(14, y - 3, W - 28, 11, 'S');
+      doc.rect(14, y - 3, W - 28, rowH, 'S');
 
       // Status strip
       doc.setFillColor(...statusColor);
-      doc.rect(14, y - 3, 2.5, 11, 'F');
+      doc.rect(14, y - 3, 2.5, rowH, 'F');
 
       // Eis name
       doc.setFont('helvetica', 'bold');
@@ -148,19 +161,35 @@ export function generatePdf(selectedTracks, selectedCourses) {
       doc.setTextColor(...statusColor);
       doc.text(`${p.earned} / ${p.required} EC`, W - 14, y + 2, { align: 'right' });
 
-      // Completed courses on next line
-      const trackData = eis.tracks[track.id];
-      const done = trackData?.vakken.filter(vak => selectedCourses.has(courseKey(eis.id, track.id, vak.code)));
-      if (done?.length) {
+      let lineY = y + 7;
+
+      // Completed courses
+      if (hasDone) {
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(6.5);
         doc.setTextColor(...GREY);
-        const courseStr = done.map(v => v.naam || v.code).join(', ');
-        const truncated = courseStr.length > 100 ? courseStr.slice(0, 98) + '…' : courseStr;
-        doc.text(truncated, 21, y + 6.5);
+        doc.text('✓', 21, lineY);
+        const doneStr = done.map(v => cleanName(v.naam || v.code)).join(', ');
+        const doneTrunc = doneStr.length > 105 ? doneStr.slice(0, 103) + '…' : doneStr;
+        doc.text(doneTrunc, 26, lineY);
+        lineY += 7;
       }
 
-      y += 14;
+      // Missing courses (recommendation)
+      if (hasMissing) {
+        doc.setFont('helvetica', 'italic');
+        doc.setFontSize(6.5);
+        doc.setTextColor(...WARN);
+        doc.text('Nog nodig:', 21, lineY);
+        doc.setFont('helvetica', 'normal');
+        doc.setTextColor(...BLACK);
+        const misStr = missing.map(v => `${cleanName(v.naam || v.code)} (+${v.ec_bijdrage ?? '?'} EC)`).join(', ');
+        const misTrunc = misStr.length > 95 ? misStr.slice(0, 93) + '…' : misStr;
+        doc.text(misTrunc, 40, lineY);
+        lineY += 7;
+      }
+
+      y += rowH + 3;
     }
     y += 6;
   }
