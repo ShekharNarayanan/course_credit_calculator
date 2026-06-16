@@ -1,0 +1,1678 @@
+{
+  "meta": {
+    "taal": "en",
+    "titel": "LOGO Certificate Checker",
+    "subtitel": "Tilburg University – School of Social and Behavioral Sciences",
+    "opmerking": "Courses are presented in the language in which they are taught."
+  },
+  "groepen": [
+    {
+      "id": "bachelor",
+      "label": "Bachelor"
+    },
+    {
+      "id": "bachelor_klinisch",
+      "label": "Bachelor – Clinical majors"
+    },
+    {
+      "id": "master_klinisch",
+      "label": "Clinical Masters (PGG + MP)"
+    },
+    {
+      "id": "master_niet_klinisch",
+      "label": "Non-clinical Masters"
+    },
+    {
+      "id": "bijzonder",
+      "label": "Special programmes"
+    }
+  ],
+  "tracks": [
+    {
+      "id": "basis_bachelor",
+      "col": 2,
+      "naam": "Basic Bachelor Psychology",
+      "groep": "bachelor",
+      "kleur": "#3B82F6"
+    },
+    {
+      "id": "bach_kp",
+      "col": 3,
+      "naam": "Clinical Psychology (CP)",
+      "groep": "bachelor_klinisch",
+      "kleur": "#8B5CF6"
+    },
+    {
+      "id": "bach_olp",
+      "col": 4,
+      "naam": "Developmental and Life-span Psychology",
+      "groep": "bachelor_klinisch",
+      "kleur": "#EC4899"
+    },
+    {
+      "id": "bach_fp",
+      "col": 5,
+      "naam": "Forensic Psychology (FP)",
+      "groep": "bachelor_klinisch",
+      "kleur": "#F59E0B"
+    },
+    {
+      "id": "bach_mp",
+      "col": 6,
+      "naam": "Medical Psychology (MP)",
+      "groep": "bachelor_klinisch",
+      "kleur": "#10B981"
+    },
+    {
+      "id": "bach_cn",
+      "col": 7,
+      "naam": "Cognitive Neuropsychology (CN)",
+      "groep": "bachelor_klinisch",
+      "kleur": "#06B6D4"
+    },
+    {
+      "id": "pgg_kp",
+      "col": 8,
+      "naam": "PGG: Clinical Psychology (CP)",
+      "groep": "master_klinisch",
+      "kleur": "#6366F1"
+    },
+    {
+      "id": "pgg_kkj",
+      "col": 9,
+      "naam": "PGG: Clinical Child and Adolescent Psychology (CCAP)",
+      "groep": "master_klinisch",
+      "kleur": "#D946EF"
+    },
+    {
+      "id": "pgg_kfp",
+      "col": 10,
+      "naam": "PGG: Clinical Forensic Psychology (CFP)",
+      "groep": "master_klinisch",
+      "kleur": "#F97316"
+    },
+    {
+      "id": "pgg_cnp",
+      "col": 11,
+      "naam": "PGG: Cognitive Neuropsychology (CNP)",
+      "groep": "master_klinisch",
+      "kleur": "#14B8A6"
+    },
+    {
+      "id": "master_mp",
+      "col": 12,
+      "naam": "Medical Psychology (MP)",
+      "groep": "master_klinisch",
+      "kleur": "#84CC16"
+    },
+    {
+      "id": "pgg_ppw",
+      "col": 13,
+      "naam": "PGG: Positive Psychology and Well-being (PPW)",
+      "groep": "master_niet_klinisch",
+      "kleur": "#FB923C"
+    },
+    {
+      "id": "rema_ida",
+      "col": 14,
+      "naam": "Research Master: Individual Differences and Assessment (REMA IDA)",
+      "groep": "bijzonder",
+      "kleur": "#A78BFA"
+    },
+    {
+      "id": "tiu_las_cns",
+      "col": 15,
+      "naam": "TiU LAS: Major Cognitive Neuroscience (TiU LAS CNS)",
+      "groep": "bijzonder",
+      "kleur": "#F43F5E"
+    }
+  ],
+  "eisen": [
+    {
+      "id": "1__klinische_psychologie_orthopedagogiek",
+      "omschrijving": "1. Clinical Psychology / Orthopedagogy",
+      "totaal_ec_vereist": 6.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [
+            {
+              "code": "500192-B-6",
+              "naam": "Emotions: Scientific and Clinical Aspects",
+              "niveau": "B",
+              "ec_bijdrage": null
+            },
+            {
+              "code": "550038-B-6",
+              "naam": "Personality Disorders",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_olp": {
+          "vakken": [
+            {
+              "code": "560026-B-6",
+              "naam": "Developmental Disorders",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            },
+            {
+              "code": "500191-B-6",
+              "naam": "Development of Talent and Motivation",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_fp": {
+          "vakken": [
+            {
+              "code": "500193-B-6",
+              "naam": "Introduction to Forensic Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_mp": {
+          "vakken": [
+            {
+              "code": "422092-B-6",
+              "naam": "Clinical Health Psychology in Medical Science",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_cn": {
+          "vakken": [
+            {
+              "code": "550022-B-6",
+              "naam": "Introduction to Clinical Neuropsychology",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500864-M-6",
+              "naam": "Ouderenpsychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500839-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van adolescenten",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500847-M-6",
+              "naam": "Forensische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500880-M-6",
+              "naam": "Developmental Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500835-M-6",
+              "naam": "Pediatrie en Pediatrische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 2.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [
+            {
+              "code": "840106-B-6",
+              "naam": "Brain Disfunction",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        }
+      }
+    },
+    {
+      "id": "2__persoonlijkheidsleer_",
+      "omschrijving": "2. Personality Psychology",
+      "totaal_ec_vereist": 6.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "550041-B-5",
+              "naam": "Psychology of Personality",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            },
+            {
+              "code": "595102-B-5",
+              "naam": "Introduction to Psychology and History of Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kkj": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kfp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_cnp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500819-M-15",
+              "naam": "Ziekteleer",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 2.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "3__ontwikkelingspsychologie_",
+      "omschrijving": "3. Developmental Psychology",
+      "totaal_ec_vereist": 6.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "560028-B-6",
+              "naam": "Developmental Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kkj": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kfp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_cnp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500835-M-6",
+              "naam": "Pediatrie en Pediatrische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 4.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "4__psychopathologie",
+      "omschrijving": "4. Psychopathology",
+      "totaal_ec_vereist": 9.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "421096-B-5",
+              "naam": "Psychopathology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 5.0
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500840-M-6",
+              "naam": "Klinische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 4.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500838-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van kinderen",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "500839-M-6",
+              "naam": "Ontwikkeling en ontwikkelingsproblemen van adolescenten",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500848-M-6",
+              "naam": "Forensische Psychopathologie",
+              "niveau": "M",
+              "ec_bijdrage": 4.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500880-M-6",
+              "naam": "Developmental Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "500881-M-6",
+              "naam": "Neuropsychology of Aging",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500819-M-15",
+              "naam": "Ziekteleer",
+              "niveau": "M",
+              "ec_bijdrage": 4.0
+            }
+          ],
+          "ec_in_track": 4.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "5__neuropsychologie_",
+      "omschrijving": "5. Neuropsychology",
+      "totaal_ec_vereist": 6.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "500185-B-6",
+              "naam": "Brain and Behavior",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kkj": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kfp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_cnp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500828-M-6",
+              "naam": "Klinische neuropsychologie",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [
+            {
+              "code": "840104-B-6",
+              "naam": "Brain and Behavior for LAS",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        }
+      }
+    },
+    {
+      "id": "6__diagnostische_modellen_en_strategie_n",
+      "omschrijving": "6. Diagnostic Models and Strategies",
+      "totaal_ec_vereist": 11.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "500215-B-5",
+              "naam": "Test Theory",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "bach_kp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "bach_olp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "bach_fp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "bach_mp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "bach_cn": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 2.5
+            }
+          ],
+          "ec_in_track": 2.5
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500806-M-6",
+              "naam": "Diagnostiek",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500806-M-6",
+              "naam": "Diagnostiek",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500806-M-6",
+              "naam": "Diagnostiek",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500882-M-6",
+              "naam": "Assessment for Cognitive Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500829-M-6",
+              "naam": "Diagnostiek medische psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [
+            {
+              "code": "400943-M-6",
+              "naam": "ReMa-IDA: Diagnostics in Cognitive Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "7__behandelmodellen_en_strategie_n_",
+      "omschrijving": "7. Treatment Models and Strategies",
+      "totaal_ec_vereist": 11.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [
+            {
+              "code": "500194-B-6",
+              "naam": "Introduction to Treatment Methods",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_olp": {
+          "vakken": [
+            {
+              "code": "500190-B-6",
+              "naam": "Development of Personal Relationships",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            },
+            {
+              "code": "560026-B-6",
+              "naam": "Developmental Disorders",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_fp": {
+          "vakken": [
+            {
+              "code": "500198-B-6",
+              "naam": "Risk Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_mp": {
+          "vakken": [
+            {
+              "code": "422094-B-6",
+              "naam": "Stress and Health",
+              "niveau": "B",
+              "ec_bijdrage": null
+            },
+            {
+              "code": "500199-B-6",
+              "naam": "Sexology",
+              "niveau": "B",
+              "ec_bijdrage": 3.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "bach_cn": {
+          "vakken": [
+            {
+              "code": "540033-B-6",
+              "naam": "Cognitive Neuropsychology",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500807-M-6",
+              "naam": "Behandelmethoden",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            },
+            {
+              "code": "500864-M-6",
+              "naam": "Ouderenpsychologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 8.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500807-M-6",
+              "naam": "Behandelmethoden",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            },
+            {
+              "code": "500838-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van kinderen",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 8.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500850-M-6",
+              "naam": "Forensische behandel- en zorgprogramma's",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            },
+            {
+              "code": "500847-M-6",
+              "naam": "Forensische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 8.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500883-M-6",
+              "naam": "Interventions for Cognitive Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            },
+            {
+              "code": "500881-M-6",
+              "naam": "Neuropsychology of Aging",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 8.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500830-M-6",
+              "naam": "Behandelingsmethoden en klinische vaardigheden",
+              "niveau": "M",
+              "ec_bijdrage": 5.0
+            },
+            {
+              "code": "500836-M-6",
+              "naam": "Psychofarmacologie Medische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 7.0
+        },
+        "pgg_ppw": {
+          "vakken": [
+            {
+              "code": "500869-M-6",
+              "naam": "Assessment & Interventions",
+              "niveau": "M",
+              "ec_bijdrage": 3.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "rema_ida": {
+          "vakken": [
+            {
+              "code": "400942-M-6",
+              "naam": "ReMa IDA:Treatment Methods in Cognitive Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        },
+        "tiu_las_cns": {
+          "vakken": [
+            {
+              "code": "540033-B-6",
+              "naam": "Cognitive Neuropsychology",
+              "niveau": "B",
+              "ec_bijdrage": 6.0
+            }
+          ],
+          "ec_in_track": 6.0
+        }
+      }
+    },
+    {
+      "id": "8__organisatie_van_de_gezondheidzorg__ge",
+      "omschrijving": "8. Organisation of Healthcare, Disability Care and Youth Services",
+      "totaal_ec_vereist": 1.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500864-M-6",
+              "naam": "Ouderenpsychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500838-M-6",
+              "naam": "Ontwikkeling en ontwikkelingsproblemen van kinderen",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500847-M-6",
+              "naam": "Forensische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500880-M-6",
+              "naam": "Developmental Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500819-M-15",
+              "naam": "Ziekteleer",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "9__juridische_aspecten_van_de_hulpverlen",
+      "omschrijving": "9. Legal Aspects of Care",
+      "totaal_ec_vereist": 1.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500840-M-6",
+              "naam": "Klinische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": null
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500839-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van adolescenten",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500847-M-6",
+              "naam": "Forensische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500880-M-6",
+              "naam": "Developmental Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500819-M-15",
+              "naam": "Ziekteleer",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 1.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "10__gespreksvoering_observatie_en_rappor",
+      "omschrijving": "10. Clinical Communication, Observation and Reporting",
+      "totaal_ec_vereist": 11.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [
+            {
+              "code": "500217-B-2",
+              "naam": "Professional Skills: Communication Skills",
+              "niveau": "B",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "500218-B-2",
+              "naam": "Professional Skills: Ethical issues",
+              "niveau": "B",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "500219-B-2",
+              "naam": "Professional Skills: Group skills",
+              "niveau": "B",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "595102-B-5",
+              "naam": "Introduction to Psychology and History of Psychology",
+              "niveau": "B",
+              "ec_bijdrage": null
+            }
+          ],
+          "ec_in_track": 7.5
+        },
+        "bach_kp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 3.5
+            }
+          ],
+          "ec_in_track": 3.5
+        },
+        "bach_olp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 3.5
+            }
+          ],
+          "ec_in_track": 3.5
+        },
+        "bach_fp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 3.5
+            }
+          ],
+          "ec_in_track": 3.5
+        },
+        "bach_mp": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 3.5
+            }
+          ],
+          "ec_in_track": 3.5
+        },
+        "bach_cn": {
+          "vakken": [
+            {
+              "code": "500196-B-6",
+              "naam": "Psychological Assessment",
+              "niveau": "B",
+              "ec_bijdrage": 3.5
+            }
+          ],
+          "ec_in_track": 3.5
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500840-M-6",
+              "naam": "Klinische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": null
+            },
+            {
+              "code": "500864-M-6",
+              "naam": "Ouderenpsychologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500838-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van kinderen",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            },
+            {
+              "code": "500839-M-6",
+              "naam": "Ontwikkeling en ontwikkelings-problemen van adolescenten",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500847-M-6",
+              "naam": "Forensische Psychologie",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            },
+            {
+              "code": "500848-M-6",
+              "naam": "Forensische Psychopathologie",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500880-M-6",
+              "naam": "Developmental Neuropsychology",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            },
+            {
+              "code": "500881-M-6",
+              "naam": "Neuropsychology of Aging",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500819-M-15",
+              "naam": "Ziekteleer",
+              "niveau": "M",
+              "ec_bijdrage": 2.0
+            },
+            {
+              "code": "500830-M-6",
+              "naam": "Behandelingsmethoden en klinische vaardigheden",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 3.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    },
+    {
+      "id": "11__het_uitvoeren_van_wetenschappelijk_o",
+      "omschrijving": "11. Conducting Scientific Research",
+      "totaal_ec_vereist": 23.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [
+            {
+              "code": "550017-B-12/500976-B-12",
+              "naam": "Bachelorthesis",
+              "niveau": "B",
+              "ec_bijdrage": 12.0
+            },
+            {
+              "code": "424531-B-5",
+              "naam": "Research Skills in Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "bach_olp": {
+          "vakken": [
+            {
+              "code": "550015-B-12/500978-B-12",
+              "naam": "Bachelorthesis",
+              "niveau": "B",
+              "ec_bijdrage": 12.0
+            },
+            {
+              "code": "424531-B-5",
+              "naam": "Research Skills in Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "bach_fp": {
+          "vakken": [
+            {
+              "code": "550018-B-12/500975-B-12",
+              "naam": "Bachelorthesis",
+              "niveau": "B",
+              "ec_bijdrage": 12.0
+            },
+            {
+              "code": "424531-B-5",
+              "naam": "Research Skills in Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "bach_mp": {
+          "vakken": [
+            {
+              "code": "550016-B-12/500977-B-12",
+              "naam": "Bachelorthesis",
+              "niveau": "B",
+              "ec_bijdrage": 12.0
+            },
+            {
+              "code": "424531-B-5",
+              "naam": "Research Skills in Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "bach_cn": {
+          "vakken": [
+            {
+              "code": "550019-B-12/500974-B-12",
+              "naam": "Bachelorthesis",
+              "niveau": "B",
+              "ec_bijdrage": 12.0
+            },
+            {
+              "code": "424531-B-5",
+              "naam": "Research Skills in Psychology",
+              "niveau": "B",
+              "ec_bijdrage": 5.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500989-M-18",
+              "naam": "Masterthesis KP",
+              "niveau": "M",
+              "ec_bijdrage": 17.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500971-M-18",
+              "naam": "Masterthesis KKJ",
+              "niveau": "M",
+              "ec_bijdrage": 17.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500981-M-18",
+              "naam": "Masterthesis KFP",
+              "niveau": "M",
+              "ec_bijdrage": 17.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500885-M-18",
+              "naam": "Master's thesis CNP",
+              "niveau": "M",
+              "ec_bijdrage": 17.0
+            }
+          ],
+          "ec_in_track": 17.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500996-M-24",
+              "naam": "Masterthesis MP",
+              "niveau": "M",
+              "ec_bijdrage": 24.0
+            }
+          ],
+          "ec_in_track": 24.0
+        },
+        "pgg_ppw": {
+          "vakken": [
+            {
+              "code": "500872-M-18",
+              "naam": "Master's thesis PPW",
+              "niveau": "M",
+              "ec_bijdrage": 18.0
+            }
+          ],
+          "ec_in_track": 18.0
+        },
+        "rema_ida": {
+          "vakken": [
+            {
+              "code": "400997-M-24",
+              "naam": "ReMa IDA Master's thesis",
+              "niveau": "M",
+              "ec_bijdrage": 24.0
+            }
+          ],
+          "ec_in_track": 24.0
+        },
+        "tiu_las_cns": {
+          "vakken": [
+            {
+              "code": "840900-B-18",
+              "naam": "Bachelorthesis Liberal Arts and Sciences",
+              "niveau": "B",
+              "ec_bijdrage": 18.0
+            }
+          ],
+          "ec_in_track": 18.0
+        }
+      }
+    },
+    {
+      "id": "12__stage_van_tenminste_520_uur__diagnos",
+      "omschrijving": "12. Internship of at least 520 hours: diagnostics, assessment and treatment",
+      "totaal_ec_vereist": 19.0,
+      "tracks": {
+        "basis_bachelor": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_kp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_olp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_fp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_mp": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "bach_cn": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "pgg_kp": {
+          "vakken": [
+            {
+              "code": "500988-M-18",
+              "naam": "Masterstage KP",
+              "niveau": "M",
+              "ec_bijdrage": 18.0
+            },
+            {
+              "code": "500989-M-18",
+              "naam": "Masterthesis KP",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 19.0
+        },
+        "pgg_kkj": {
+          "vakken": [
+            {
+              "code": "500970-M-18",
+              "naam": "Masterstage KKJ",
+              "niveau": "M",
+              "ec_bijdrage": 18.0
+            },
+            {
+              "code": "500971-M-18",
+              "naam": "Masterthesis KKJ",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 19.0
+        },
+        "pgg_kfp": {
+          "vakken": [
+            {
+              "code": "500980-M-18",
+              "naam": "Masterstage KFP",
+              "niveau": "M",
+              "ec_bijdrage": 18.0
+            },
+            {
+              "code": "500981-M-18",
+              "naam": "Masterthesis KFP",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 19.0
+        },
+        "pgg_cnp": {
+          "vakken": [
+            {
+              "code": "500886-M-18",
+              "naam": "Master's Internship CNP External",
+              "niveau": "M",
+              "ec_bijdrage": 18.0
+            },
+            {
+              "code": "500885-M-18",
+              "naam": "Masterthesis CNP",
+              "niveau": "M",
+              "ec_bijdrage": 1.0
+            }
+          ],
+          "ec_in_track": 19.0
+        },
+        "master_mp": {
+          "vakken": [
+            {
+              "code": "500833-M-36",
+              "naam": "Masterstage MP",
+              "niveau": "M",
+              "ec_bijdrage": 36.0
+            }
+          ],
+          "ec_in_track": 36.0
+        },
+        "pgg_ppw": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "rema_ida": {
+          "vakken": [],
+          "ec_in_track": null
+        },
+        "tiu_las_cns": {
+          "vakken": [],
+          "ec_in_track": null
+        }
+      }
+    }
+  ]
+}
