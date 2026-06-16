@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Course Credit Planner · Tilburg University</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- jsPDF for PDF generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<div class="app-shell">
+
+  <!-- ── Header ── -->
+  <header class="site-header">
+    <div class="logo">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <rect x="3" y="3" width="8" height="8" rx="1.5" fill="#D4481A"/>
+        <rect x="13" y="3" width="8" height="8" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+        <rect x="3" y="13" width="8" height="8" rx="1.5" fill="rgba(255,255,255,0.3)"/>
+        <rect x="13" y="13" width="8" height="8" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+      </svg>
+      <span>Tilburg</span>&nbsp;Course Planner
+    </div>
+    <div class="header-credits">
+      <div class="credit-pill" id="header-pill">
+        <span class="value" id="header-ects">0</span>
+        <span class="label">ECTS selected</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ── Main layout ── -->
+  <div class="main-layout">
+
+    <!-- ── Sidebar ── -->
+    <aside class="sidebar">
+
+      <!-- Progress card -->
+      <div class="progress-card">
+        <h2>Your Progress</h2>
+        <div class="big-number">
+          <span class="current" id="ects-current">0</span>
+          <span class="total">/ 180 ECTS</span>
+        </div>
+
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="progress-fill" style="width:0%"></div>
+          <div class="milestone-marker" id="milestone-marker"></div>
+        </div>
+
+        <div class="milestone-label" id="milestone-label">
+          <strong>50 ECTS</strong> to reach the milestone
+        </div>
+
+        <div class="milestone-reached-banner" id="milestone-banner">
+          🎓 50 ECTS milestone reached!
+        </div>
+      </div>
+
+      <!-- Category breakdown -->
+      <div class="category-breakdown">
+        <h2>By Category</h2>
+        <div id="cat-list">
+          <div style="font-size:12px;color:var(--muted);">No courses selected yet.</div>
+        </div>
+      </div>
+
+      <!-- PDF button -->
+      <button class="pdf-btn" id="pdf-btn" disabled>
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="12" y1="18" x2="12" y2="12"/>
+          <polyline points="9 15 12 18 15 15"/>
+        </svg>
+        Download PDF Report
+      </button>
+
+    </aside>
+
+    <!-- ── Content ── -->
+    <main class="content-area">
+
+      <!-- Filter bar -->
+      <div class="filter-bar" id="filter-bar"></div>
+
+      <!-- Course grid populated by JS -->
+      <div id="course-container"></div>
+
+      <!-- Recommendations -->
+      <div class="recommendations-panel" id="rec-panel">
+        <h2>Recommendations</h2>
+        <p class="rec-subtitle">Select some courses above to get personalised recommendations.</p>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<script type="module">
+  import { init } from './js/app.js';
+  init();
+</script>
+
+</body>
+</html>

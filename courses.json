@@ -1,0 +1,326 @@
+{
+  "programme": {
+    "name": "Social and Behavioral Sciences",
+    "totalRequired": 180,
+    "milestoneCredits": 50,
+    "school": "Tilburg School of Social and Behavioral Sciences"
+  },
+  "categories": [
+    {
+      "id": "methods",
+      "label": "Research Methods & Statistics",
+      "color": "#5B4FCF",
+      "required": true
+    },
+    {
+      "id": "psychology",
+      "label": "Psychology",
+      "color": "#1D7D9A"
+    },
+    {
+      "id": "sociology",
+      "label": "Sociology",
+      "color": "#2E8B57"
+    },
+    {
+      "id": "economics",
+      "label": "Economics",
+      "color": "#C07D3A"
+    },
+    {
+      "id": "dataScience",
+      "label": "Data Science",
+      "color": "#B5393A"
+    },
+    {
+      "id": "elective",
+      "label": "Electives & Interdisciplinary",
+      "color": "#7A5C8A"
+    }
+  ],
+  "courses": [
+    {
+      "id": "SOC101",
+      "name": "Introduction to Sociology",
+      "ects": 6,
+      "category": "sociology",
+      "year": 1,
+      "description": "Core concepts in sociological theory, social structure, and inequality."
+    },
+    {
+      "id": "PSY101",
+      "name": "Introduction to Psychology",
+      "ects": 6,
+      "category": "psychology",
+      "year": 1,
+      "description": "Foundations of cognitive, social, and developmental psychology."
+    },
+    {
+      "id": "MTH101",
+      "name": "Research Methods I",
+      "ects": 6,
+      "category": "methods",
+      "year": 1,
+      "description": "Introduction to empirical research design and qualitative methods."
+    },
+    {
+      "id": "MTH102",
+      "name": "Statistics for Social Sciences",
+      "ects": 6,
+      "category": "methods",
+      "year": 1,
+      "description": "Descriptive and inferential statistics using SPSS."
+    },
+    {
+      "id": "ECO101",
+      "name": "Principles of Economics",
+      "ects": 6,
+      "category": "economics",
+      "year": 1,
+      "description": "Micro and macroeconomic fundamentals for social scientists."
+    },
+    {
+      "id": "PSY201",
+      "name": "Social Psychology",
+      "ects": 6,
+      "category": "psychology",
+      "year": 2,
+      "description": "Attitudes, persuasion, group dynamics, and intergroup relations."
+    },
+    {
+      "id": "PSY202",
+      "name": "Cognitive Psychology",
+      "ects": 6,
+      "category": "psychology",
+      "year": 2,
+      "description": "Memory, attention, language, and problem-solving processes."
+    },
+    {
+      "id": "SOC201",
+      "name": "Social Inequality and Stratification",
+      "ects": 6,
+      "category": "sociology",
+      "year": 2,
+      "description": "Class, gender, ethnicity, and power in contemporary societies."
+    },
+    {
+      "id": "MTH201",
+      "name": "Research Methods II: Quantitative",
+      "ects": 6,
+      "category": "methods",
+      "year": 2,
+      "description": "Regression analysis, survey design, and advanced SPSS/R techniques."
+    },
+    {
+      "id": "MTH202",
+      "name": "Research Methods III: Qualitative",
+      "ects": 6,
+      "category": "methods",
+      "year": 2,
+      "description": "Ethnography, interviewing, content analysis, and grounded theory."
+    },
+    {
+      "id": "DS201",
+      "name": "Introduction to Data Science",
+      "ects": 6,
+      "category": "dataScience",
+      "year": 2,
+      "description": "Python for data analysis, visualization, and basic machine learning."
+    },
+    {
+      "id": "ECO201",
+      "name": "Behavioral Economics",
+      "ects": 6,
+      "category": "economics",
+      "year": 2,
+      "description": "Psychological influences on economic decision-making and policy."
+    },
+    {
+      "id": "SOC301",
+      "name": "Organizations and Management",
+      "ects": 6,
+      "category": "sociology",
+      "year": 3,
+      "description": "Organizational theory, workplace behavior, and institutional dynamics."
+    },
+    {
+      "id": "PSY301",
+      "name": "Health Psychology",
+      "ects": 6,
+      "category": "psychology",
+      "year": 3,
+      "description": "Psychological determinants of health behavior and clinical applications."
+    },
+    {
+      "id": "DS301",
+      "name": "Machine Learning for Social Scientists",
+      "ects": 6,
+      "category": "dataScience",
+      "year": 3,
+      "description": "Supervised and unsupervised ML methods applied to social data."
+    },
+    {
+      "id": "ECO301",
+      "name": "Public Economics and Policy",
+      "ects": 6,
+      "category": "economics",
+      "year": 3,
+      "description": "Welfare economics, taxation, public goods, and policy evaluation."
+    },
+    {
+      "id": "ELE101",
+      "name": "Philosophy of Science",
+      "ects": 6,
+      "category": "elective",
+      "year": 1,
+      "description": "Epistemology, scientific method, and philosophy of social inquiry."
+    },
+    {
+      "id": "ELE201",
+      "name": "Global Migration and Society",
+      "ects": 6,
+      "category": "elective",
+      "year": 2,
+      "description": "Migration patterns, integration, identity, and European policy."
+    },
+    {
+      "id": "ELE202",
+      "name": "Media, Technology and Society",
+      "ects": 6,
+      "category": "elective",
+      "year": 2,
+      "description": "Digital media impact on social behavior, democracy, and culture."
+    },
+    {
+      "id": "ELE301",
+      "name": "Ethics in AI and Data",
+      "ects": 6,
+      "category": "elective",
+      "year": 3,
+      "description": "Ethical frameworks for data collection, algorithmic bias, and AI governance."
+    },
+    {
+      "id": "DS101",
+      "name": "Digital Methods in Social Research",
+      "ects": 6,
+      "category": "dataScience",
+      "year": 1,
+      "description": "Web scraping, APIs, and digital trace data for social research."
+    },
+    {
+      "id": "PSY302",
+      "name": "Neuroscience and Behavior",
+      "ects": 6,
+      "category": "psychology",
+      "year": 3,
+      "description": "Brain-behavior relationships, neuroimaging, and cognitive neuroscience."
+    },
+    {
+      "id": "SOC202",
+      "name": "Political Sociology",
+      "ects": 6,
+      "category": "sociology",
+      "year": 2,
+      "description": "Social movements, political parties, voting behavior, and democracy."
+    },
+    {
+      "id": "MTH301",
+      "name": "Advanced Statistical Modeling",
+      "ects": 6,
+      "category": "methods",
+      "year": 3,
+      "description": "Multilevel modeling, SEM, and Bayesian approaches in R."
+    },
+    {
+      "id": "ELE302",
+      "name": "Climate Change and Human Behavior",
+      "ects": 6,
+      "category": "elective",
+      "year": 3,
+      "description": "Psychological and social dimensions of climate action and sustainability."
+    },
+    {
+      "id": "ECO102",
+      "name": "Labor Economics",
+      "ects": 6,
+      "category": "economics",
+      "year": 1,
+      "description": "Labor markets, wages, employment, and workplace inequality."
+    },
+    {
+      "id": "DS302",
+      "name": "Text Mining and NLP",
+      "ects": 6,
+      "category": "dataScience",
+      "year": 3,
+      "description": "Natural language processing and text analysis for social research."
+    },
+    {
+      "id": "PSY203",
+      "name": "Developmental Psychology",
+      "ects": 6,
+      "category": "psychology",
+      "year": 2,
+      "description": "Human development across the lifespan: cognition, emotion, and identity."
+    },
+    {
+      "id": "SOC103",
+      "name": "Family and Intimate Relations",
+      "ects": 6,
+      "category": "sociology",
+      "year": 1,
+      "description": "Changing structures of family, partnership, and care across cultures."
+    },
+    {
+      "id": "ELE303",
+      "name": "Internship",
+      "ects": 12,
+      "category": "elective",
+      "year": 3,
+      "description": "Supervised professional placement in a research or policy organization."
+    }
+  ],
+  "recommendations": [
+    {
+      "condition": "lowMethods",
+      "threshold": 12,
+      "category": "methods",
+      "message": "You're short on Research Methods credits. These are core to your degree.",
+      "courseIds": ["MTH101", "MTH102", "MTH201", "MTH202", "MTH301"]
+    },
+    {
+      "condition": "lowDataScience",
+      "threshold": 6,
+      "category": "dataScience",
+      "message": "Data Science skills are increasingly valued. Consider adding these.",
+      "courseIds": ["DS101", "DS201", "DS301", "DS302"]
+    },
+    {
+      "condition": "lowPsychology",
+      "threshold": 6,
+      "category": "psychology",
+      "message": "Broaden your Psychology knowledge with these courses.",
+      "courseIds": ["PSY101", "PSY201", "PSY202", "PSY301", "PSY302"]
+    },
+    {
+      "condition": "lowSociology",
+      "threshold": 6,
+      "category": "sociology",
+      "message": "Sociology is core to this programme. Consider adding these.",
+      "courseIds": ["SOC101", "SOC201", "SOC301", "SOC202"]
+    },
+    {
+      "condition": "lowEconomics",
+      "threshold": 6,
+      "category": "economics",
+      "message": "Economics courses complement your Social Science profile well.",
+      "courseIds": ["ECO101", "ECO201", "ECO301"]
+    },
+    {
+      "condition": "nearMilestone",
+      "threshold": 10,
+      "message": "You're close to 50 ECTS! A few more courses will unlock milestone status.",
+      "courseIds": []
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+/* =========================================
+   Tilburg Course Planner — styles.css
+   Design: academic-utility meets modern web
+   ========================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+/* ── Tokens ── */
+:root {
+  --bg:         #F7F5F0;
+  --surface:    #FFFFFF;
+  --border:     #E2DDD6;
+  --text:       #1A1714;
+  --muted:      #7A746E;
+  --accent:     #D4481A;        /* Tilburg orange-red */
+  --accent-dim: #F5E8E3;
+  --good:       #2E7D50;
+  --good-dim:   #E8F3ED;
+  --warn:       #B5740A;
+  --warn-dim:   #FDF3E3;
+
+  --cat-methods:     #5B4FCF;
+  --cat-psychology:  #1D7D9A;
+  --cat-sociology:   #2E8B57;
+  --cat-economics:   #C07D3A;
+  --cat-dataScience: #B5393A;
+  --cat-elective:    #7A5C8A;
+
+  --radius: 8px;
+  --radius-lg: 14px;
+  --shadow: 0 1px 3px rgba(0,0,0,0.08), 0 4px 12px rgba(0,0,0,0.05);
+  --shadow-lg: 0 4px 20px rgba(0,0,0,0.12);
+
+  --font-body: 'DM Sans', system-ui, sans-serif;
+  --font-mono: 'DM Mono', monospace;
+}
+
+/* ── Reset ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* ── Layout ── */
+.app-shell {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+}
+
+.main-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 0;
+  max-width: 1280px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 24px 24px 48px;
+  gap: 24px;
+}
+
+/* ── Header ── */
+.site-header {
+  background: var(--text);
+  color: #fff;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 3px solid var(--accent);
+}
+
+.site-header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: -0.01em;
+}
+
+.site-header .logo span {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.header-credits {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.credit-pill {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 100px;
+  padding: 5px 14px 5px 8px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.credit-pill .value {
+  font-family: var(--font-mono);
+  font-size: 17px;
+  font-weight: 500;
+  color: #fff;
+  min-width: 28px;
+  text-align: right;
+}
+
+.credit-pill .label {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+}
+
+.credit-pill.milestone-reached .value { color: #7FE8A2; }
+
+/* ── Sidebar ── */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ── Progress Card ── */
+.progress-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.progress-card h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.big-number {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.big-number .current {
+  font-family: var(--font-mono);
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1;
+  color: var(--text);
+}
+
+.big-number .total {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--muted);
+}
+
+.progress-bar-wrap {
+  margin: 14px 0 8px;
+  background: var(--border);
+  border-radius: 100px;
+  height: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 100px;
+  transition: width 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+}
+
+.milestone-marker {
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 14px;
+  background: var(--warn);
+  border-radius: 1px;
+  transform: translateX(-50%);
+}
+
+.milestone-label {
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 6px;
+}
+
+.milestone-label strong { color: var(--warn); }
+
+.milestone-reached-banner {
+  display: none;
+  background: var(--good-dim);
+  border: 1px solid var(--good);
+  border-radius: var(--radius);
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--good);
+  font-weight: 500;
+  margin-top: 12px;
+  align-items: center;
+  gap: 8px;
+}
+
+.milestone-reached-banner.show { display: flex; }
+
+/* ── Category breakdown ── */
+.category-breakdown {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.category-breakdown h2 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 14px;
+}
+
+.cat-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cat-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.cat-name {
+  font-size: 12px;
+  flex: 1;
+  color: var(--text);
+  line-height: 1.3;
+}
+
+.cat-ects {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--muted);
+  min-width: 36px;
+  text-align: right;
+}
+
+/* ── PDF Button ── */
+.pdf-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: background 0.15s, transform 0.1s;
+  box-shadow: var(--shadow);
+}
+
+.pdf-btn:hover { background: #B83C12; }
+.pdf-btn:active { transform: scale(0.98); }
+.pdf-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* ── Main content ── */
+.content-area {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ── Filter tabs ── */
+.filter-bar {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.filter-tab {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  padding: 6px 14px;
+  font-family: var(--font-body);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.filter-tab:hover { border-color: var(--text); color: var(--text); }
+.filter-tab.active { background: var(--text); color: #fff; border-color: var(--text); }
+
+/* ── Course grid ── */
+.course-section {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.section-header {
+  padding: 14px 20px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-header h3 {
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.section-header .year-ects {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+}
+
+/* ── Course card ── */
+.course-card {
+  background: var(--surface);
+  padding: 16px;
+  cursor: pointer;
+  transition: background 0.1s;
+  position: relative;
+  user-select: none;
+}
+
+.course-card:hover { background: #FAFAF8; }
+
+.course-card.selected {
+  background: var(--accent-dim);
+}
+
+.course-card.selected::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border: 2px solid var(--accent);
+  border-radius: 0;
+  pointer-events: none;
+}
+
+.course-card .card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.course-card .course-id {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--muted);
+  letter-spacing: 0.04em;
+}
+
+.course-card .ects-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 7px;
+  border-radius: 100px;
+  background: var(--border);
+  color: var(--muted);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.course-card.selected .ects-badge {
+  background: var(--accent);
+  color: #fff;
+}
+
+.course-card .course-name {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.course-card .course-desc {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.course-card .cat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 10px;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 100px;
+  opacity: 0.85;
+}
+
+.checkmark {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 11px;
+}
+
+.course-card.selected .checkmark { display: flex; }
+.course-card.selected .card-top { padding-right: 28px; }
+
+/* ── Recommendations panel ── */
+.recommendations-panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.recommendations-panel h2 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.recommendations-panel .rec-subtitle {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+.rec-group {
+  margin-bottom: 20px;
+}
+
+.rec-group-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--warn);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.rec-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.rec-chip {
+  background: var(--warn-dim);
+  border: 1px solid rgba(181,116,10,0.2);
+  border-radius: 100px;
+  padding: 5px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--warn);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.rec-chip:hover {
+  background: var(--warn);
+  color: #fff;
+  border-color: var(--warn);
+}
+
+.empty-rec {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  background: var(--good-dim);
+  border-radius: var(--radius);
+  font-size: 13px;
+  color: var(--good);
+}
+
+/* ── Utility ── */
+.hidden { display: none !important; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .main-layout {
+    grid-template-columns: 1fr;
+    padding: 16px;
+  }
+  .site-header { padding: 0 16px; }
+  .credit-pill .label { display: none; }
+}
