@@ -165,13 +165,15 @@ export function generatePdf(selectedTracks, selectedCourses) {
 
       // Completed courses
       if (hasDone) {
-        doc.setFont('helvetica', 'normal');
+        doc.setFont('helvetica', 'bold');
         doc.setFontSize(6.5);
+        doc.setTextColor(...GOOD);
+        doc.text('Behaald:', 21, lineY);
+        doc.setFont('helvetica', 'normal');
         doc.setTextColor(...GREY);
-        doc.text('✓', 21, lineY);
         const doneStr = done.map(v => cleanName(v.naam || v.code)).join(', ');
-        const doneTrunc = doneStr.length > 105 ? doneStr.slice(0, 103) + '…' : doneStr;
-        doc.text(doneTrunc, 26, lineY);
+        const doneTrunc = doneStr.length > 100 ? doneStr.slice(0, 98) + '...' : doneStr;
+        doc.text(doneTrunc, 40, lineY);
         lineY += 7;
       }
 
@@ -184,7 +186,7 @@ export function generatePdf(selectedTracks, selectedCourses) {
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...BLACK);
         const misStr = missing.map(v => `${cleanName(v.naam || v.code)} (+${v.ec_bijdrage ?? '?'} EC)`).join(', ');
-        const misTrunc = misStr.length > 95 ? misStr.slice(0, 93) + '…' : misStr;
+        const misTrunc = misStr.length > 95 ? misStr.slice(0, 93) + '...' : misStr;
         doc.text(misTrunc, 40, lineY);
         lineY += 7;
       }

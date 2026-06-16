@@ -1,9 +1,9 @@
 {
   "meta": {
-    "taal": "nl",
-    "titel": "LOGO Certificaat Checker",
-    "subtitel": "Tilburg University – TSB",
-    "opmerking": "Vakken worden aangeboden in de taal waarin ze worden gegeven."
+    "taal": "en",
+    "titel": "LOGO Certificate Checker",
+    "subtitel": "Tilburg University – School of Social and Behavioral Sciences",
+    "opmerking": "Courses are presented in the language in which they are taught."
   },
   "groepen": [
     {
@@ -12,82 +12,82 @@
     },
     {
       "id": "bachelor_klinisch",
-      "label": "Bachelor – Klinische majoren"
+      "label": "Bachelor – Clinical majors"
     },
     {
       "id": "master_klinisch",
-      "label": "Klinische Masters (PGG + MP)"
+      "label": "Clinical Masters (PGG + MP)"
     },
     {
       "id": "master_niet_klinisch",
-      "label": "Niet-klinische Masters"
+      "label": "Non-clinical Masters"
     },
     {
       "id": "bijzonder",
-      "label": "Bijzondere trajecten"
+      "label": "Special programmes"
     }
   ],
   "tracks": [
     {
       "id": "basis_bachelor",
       "col": 2,
-      "naam": "Basis Bachelor Psychologie",
+      "naam": "Basic Bachelor Psychology",
       "groep": "bachelor",
       "kleur": "#3B82F6"
     },
     {
       "id": "bach_kp",
       "col": 3,
-      "naam": "Klinische Psychologie (KP)",
+      "naam": "Clinical Psychology (CP)",
       "groep": "bachelor_klinisch",
       "kleur": "#8B5CF6"
     },
     {
       "id": "bach_olp",
       "col": 4,
-      "naam": "Ontwikkelingspsychologie en Levenslooppsychologie",
+      "naam": "Developmental and Life-span Psychology",
       "groep": "bachelor_klinisch",
       "kleur": "#EC4899"
     },
     {
       "id": "bach_fp",
       "col": 5,
-      "naam": "Forensische Psychologie (FP)",
+      "naam": "Forensic Psychology (FP)",
       "groep": "bachelor_klinisch",
       "kleur": "#F59E0B"
     },
     {
       "id": "bach_mp",
       "col": 6,
-      "naam": "Medische Psychologie (MP)",
+      "naam": "Medical Psychology (MP)",
       "groep": "bachelor_klinisch",
       "kleur": "#10B981"
     },
     {
       "id": "bach_cn",
       "col": 7,
-      "naam": "Cognitieve Neuropsychologie (CN)",
+      "naam": "Cognitive Neuropsychology (CN)",
       "groep": "bachelor_klinisch",
       "kleur": "#06B6D4"
     },
     {
       "id": "pgg_kp",
       "col": 8,
-      "naam": "PGG: Klinische Psychologie (KP)",
+      "naam": "PGG: Clinical Psychology (CP)",
       "groep": "master_klinisch",
       "kleur": "#6366F1"
     },
     {
       "id": "pgg_kkj",
       "col": 9,
-      "naam": "PGG: Klinische Kinder- en Jeugdpsychologie (KKJ)",
+      "naam": "PGG: Clinical Child and Adolescent Psychology (CCAP)",
       "groep": "master_klinisch",
       "kleur": "#D946EF"
     },
     {
       "id": "pgg_kfp",
       "col": 10,
-      "naam": "PGG: Klinische Forensische Psychologie (KFP)",
+      "naam": "PGG: Clinical Forensic Psychology (CFP)",
       "groep": "master_klinisch",
       "kleur": "#F97316"
     },
@@ -101,7 +101,7 @@
     {
       "id": "master_mp",
       "col": 12,
-      "naam": "Medische Psychologie (MP)",
+      "naam": "Medical Psychology (MP)",
       "groep": "master_klinisch",
       "kleur": "#84CC16"
     },
@@ -130,7 +130,7 @@
   "eisen": [
     {
       "id": "1__klinische_psychologie_orthopedagogiek",
-      "omschrijving": "1. Klinische Psychologie/orthopedagogiek",
+      "omschrijving": "1. Clinical Psychology / Orthopedagogy",
       "totaal_ec_vereist": 6.0,
       "tracks": {
         "basis_bachelor": {
@@ -143,7 +143,7 @@
               "code": "500192-B-6",
               "naam": "Emotions: Scientific and Clinical Aspects",
               "niveau": "B",
-              "ec_bijdrage": null
+              "ec_bijdrage": 3.0
             },
             {
               "code": "550038-B-6",
@@ -282,7 +282,7 @@
     },
     {
       "id": "2__persoonlijkheidsleer_",
-      "omschrijving": "2. Persoonlijkheidsleer",
+      "omschrijving": "2. Personality Psychology",
       "totaal_ec_vereist": 6.0,
       "tracks": {
         "basis_bachelor": {
@@ -365,7 +365,7 @@
     },
     {
       "id": "3__ontwikkelingspsychologie_",
-      "omschrijving": "3. Ontwikkelingspsychologie",
+      "omschrijving": "3. Developmental Psychology",
       "totaal_ec_vereist": 6.0,
       "tracks": {
         "basis_bachelor": {
@@ -442,7 +442,7 @@
     },
     {
       "id": "4__psychopathologie",
-      "omschrijving": "4. Psychopathologie",
+      "omschrijving": "4. Psychopathology",
       "totaal_ec_vereist": 9.0,
       "tracks": {
         "basis_bachelor": {
@@ -559,7 +559,7 @@
     },
     {
       "id": "5__neuropsychologie_",
-      "omschrijving": "5. Neuropsychologie",
+      "omschrijving": "5. Neuropsychology",
       "totaal_ec_vereist": 6.0,
       "tracks": {
         "basis_bachelor": {
@@ -643,7 +643,7 @@
     },
     {
       "id": "6__diagnostische_modellen_en_strategie_n",
-      "omschrijving": "6. Diagnostische modellen en strategieën",
+      "omschrijving": "6. Diagnostic Models and Strategies",
       "totaal_ec_vereist": 11.0,
       "tracks": {
         "basis_bachelor": {
@@ -790,7 +790,7 @@
     },
     {
       "id": "7__behandelmodellen_en_strategie_n_",
-      "omschrijving": "7. Behandelmodellen en strategieën",
+      "omschrijving": "7. Treatment Models and Strategies",
       "totaal_ec_vereist": 11.0,
       "tracks": {
         "basis_bachelor": {
@@ -842,7 +842,7 @@
               "code": "422094-B-6",
               "naam": "Stress and Health",
               "niveau": "B",
-              "ec_bijdrage": null
+              "ec_bijdrage": 3.0
             },
             {
               "code": "500199-B-6",
@@ -986,7 +986,7 @@
     },
     {
       "id": "8__organisatie_van_de_gezondheidzorg__ge",
-      "omschrijving": "8. Organisatie van de gezondheidzorg, gehandicaptenzorg en jeugdhulpverlening",
+      "omschrijving": "8. Organisation of Healthcare, Disability Care and Youth Services",
       "totaal_ec_vereist": 1.0,
       "tracks": {
         "basis_bachelor": {
@@ -1084,7 +1084,7 @@
     },
     {
       "id": "9__juridische_aspecten_van_de_hulpverlen",
-      "omschrijving": "9. Juridische aspecten van de hulpverlening",
+      "omschrijving": "9. Legal Aspects of Care",
       "totaal_ec_vereist": 1.0,
       "tracks": {
         "basis_bachelor": {
@@ -1117,7 +1117,7 @@
               "code": "500840-M-6",
               "naam": "Klinische Psychologie",
               "niveau": "M",
-              "ec_bijdrage": null
+              "ec_bijdrage": 1.0
             }
           ],
           "ec_in_track": 1.0
@@ -1182,7 +1182,7 @@
     },
     {
       "id": "10__gespreksvoering_observatie_en_rappor",
-      "omschrijving": "10. Gespreksvoering observatie en rapportage",
+      "omschrijving": "10. Clinical Communication, Observation and Reporting",
       "totaal_ec_vereist": 11.0,
       "tracks": {
         "basis_bachelor": {
@@ -1209,7 +1209,7 @@
               "code": "595102-B-5",
               "naam": "Introduction to Psychology and History of Psychology",
               "niveau": "B",
-              "ec_bijdrage": null
+              "ec_bijdrage": 1.5
             }
           ],
           "ec_in_track": 7.5
@@ -1275,7 +1275,7 @@
               "code": "500840-M-6",
               "naam": "Klinische Psychologie",
               "niveau": "M",
-              "ec_bijdrage": null
+              "ec_bijdrage": 1.0
             },
             {
               "code": "500864-M-6",
@@ -1370,7 +1370,7 @@
     },
     {
       "id": "11__het_uitvoeren_van_wetenschappelijk_o",
-      "omschrijving": "11. Het uitvoeren van wetenschappelijk onderzoek",
+      "omschrijving": "11. Conducting Scientific Research",
       "totaal_ec_vereist": 23.0,
       "tracks": {
         "basis_bachelor": {
@@ -1554,7 +1554,7 @@
     },
     {
       "id": "12__stage_van_tenminste_520_uur__diagnos",
-      "omschrijving": "12. Stage van tenminste 520 uur: diagnostiek, indicatiestellig, en behandeling",
+      "omschrijving": "12. Internship of at least 520 hours: diagnostics, assessment and treatment",
       "totaal_ec_vereist": 19.0,
       "tracks": {
         "basis_bachelor": {
